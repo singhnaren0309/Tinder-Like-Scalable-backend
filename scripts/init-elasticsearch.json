@@ -1,0 +1,24 @@
+{
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "properties": {
+      "user_id": { "type": "keyword" },
+      "display_name": { "type": "text" },
+      "age": { "type": "integer" },
+      "gender": { "type": "keyword" },
+      "interested_in": { "type": "keyword" },
+      "bio": { "type": "text" },
+      "photos": { "type": "keyword" },
+      "location": { "type": "geo_point" },
+      "max_distance_km": { "type": "integer" },
+      "age_min": { "type": "integer" },
+      "age_max": { "type": "integer" },
+      "is_active": { "type": "boolean" },
+      "updated_at": { "type": "date" }
+    }
+  }
+}
+

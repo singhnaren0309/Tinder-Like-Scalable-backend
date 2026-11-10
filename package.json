@@ -1,0 +1,48 @@
+{
+  "name": "tinder-backend-system-design",
+  "version": "1.0.0",
+  "description": "Highly Scalable Tinder Backend System Design and Implementation",
+  "main": "index.js",
+  "scripts": {
+    "gateway": "node api-gateway/src/index.js",
+    "profile-service": "node services/profile-service/src/index.js",
+    "swipe-service": "node services/swipe-service/src/index.js",
+    "notification-service": "node services/notification-service/src/index.js",
+    "feed-worker": "node workers/feed-cron-worker/src/index.js",
+    "test:flow": "node scripts/test-flow.js",
+    "seed": "node scripts/seed-data.js"
+  },
+  "keywords": [
+    "system-design",
+    "tinder",
+    "microservices",
+    "cassandra",
+    "redis",
+    "kafka",
+    "elasticsearch",
+    "postgresql",
+    "rate-limiting"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.13.0",
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "cassandra-driver": "^4.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "http-proxy-middleware": "^3.0.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "kafkajs": "^2.2.4",
+    "node-cron": "^3.0.3",
+    "pg": "^8.11.5",
+    "tinder-backend-system-design": "file:",
+    "uuid": "^9.0.1",
+    "winston": "^3.13.0",
+    "ws": "^8.22.2"
+  }
+}
